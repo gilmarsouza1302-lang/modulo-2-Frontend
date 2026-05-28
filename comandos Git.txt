@@ -1,0 +1,16 @@
+Comandos git bash
+
+cd  nomeDestino-> para entrar no local
+ls -> list -> ver pastas no local que voce esta(listar pastas)
+mkdir "nomepasta" -> cria a pasta no local que voce esta
+cd .. -> volta
+cd . ->Referencia local que esta
+git init . -> transforma a pasta em um repositorio
+ls -a -> lista arquivos ocultos dentro da pasta
+git status ->
+rm-rf .git -> excluir pasta e subpastas 
+git add nomeDoArquivo ->adiciona o arquivo para commit
+git add . -> seleciona todos os arquivos/modificações para adicionar ao commit/save
+git commit -m "escreve a mensagem indicando o que foi feito na atualização" -> manda a atualização
+
+ctrl + c -> cancela ultimo comando
