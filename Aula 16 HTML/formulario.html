@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <form action="#">  <!-- Esse é a TAG de abertura para um formulario-->
+        <label for="nome">Nome </label> <!-- cria o nome na frente da caixa de texto indendificador-->
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required> <!-- caixa de texto /== placeholder aparece dentro da caixa o que o
+                                                                                                     o que a pessoa deve escrever -->
+        <br><br> <!--Ele quebra a linha para colocar um embaixo do outro-->
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@email.com"> <!--caixa de texto do email. e o (placeholder ele digite o seu email aqui) -->
+        <br><br>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Senha com 8 caracteres" minlength="8" maxlength="12"> <!--caixa de senha e não mostra as senhas.
+      ("planceholder" digite o sua senha / E tem atributo "minlength" determinar o tamanho minimo de 8 caracterise "maxlengt" a quantidade maxima.) -->
+        <br><br>
+        <label for="telefone">telefone</label>
+        <input type="tel" name="telefone" id="telefone">
+        <br><br>
+        <label for="data">Data Nascimento</label>
+        <input type="date" name="data" id="data"> <!-- Essa TAG abre uma agenda na hora de prencher o campo.-->
+        <br><br>
+        <p>Escolha seu turno:</p> <!-- Tag "P" é paragrafo-->
+        <br>
+        <input type="radio" name="turno" id="manha"> <!-- O input type "Radio" ele cria uma bolinha para marcar, uma unica opção º -->
+        <label for="manha">Manhã</label>            <!-- O Nome ele tem que ser igual em todos nome= "Turno"-->
+        <input type="radio" name="turno" id="tarde">
+        <label for="tarde">Tarde</label>
+        <input type="radio" name="turno" id="noite">
+        <label for="noite">Noite</label>
+        <br><br>
+        <input type="checkbox" name="materia" id="quimica" value="quimica"> <!-- O input type "checkbox" são seletores onde podemos selecionar varios. 
+         Mas temos que mandar o valor da nossa caixa. colocar a Tag " value =" para poder selecionar varios. são formato quadrado-->
+        <label for="quimica">quimica</label> <!-- O Nome ele tem que ser igual em todos nome= " Materia"-->
+        <input type="checkbox" name="materia" id="matematica" value="matematica">
+        <label for="matematica">matematica</label>
+    </form>
+</body>
+</html>
