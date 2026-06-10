@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(202, 189, 154);
+    font-family: Arial, Helvetica, sans-serif ;
+} 
+/* fonta-family: da mudar a fonte do texto*/
+
+p{
+    font-size: 25px;
+    text-align: justify;
+}
+/* p = paragrafo */
+/* h1 = subtitulo */
+h1{
+    font: size 25px; ;
+    text-align: justify ;
+    color: black;
+}
+.card{
+    background-color: white;
+    width: 500px; 
+    height: auto;
+    margin: 50px auto; 
+    padding: 30px;
+    border: 2px solid black
+}
+h2{
+    color: blueviolet;
+}
+/* . chama a card{} da minha caixa*/
+/* background-color = cor dentro da caixa */
+/* height = altura da caixa, colocando auto ele se ajusta*/
+/* margin = margem:50px auto = é margem de fora de cima e baixo 50px e "auto" ele ajusta no centro*/
+/* padding = cria espaço dentro da caixa em toda as margens*/
+/* border = borda na volta da caixa, solido e preto.*/
+#texto{
+    font-size: 10px;
+}
+/* seletor id=text no CSS BUSCA com #texto{} dai muda o tamanho de um texte especifico.*/
+h1{
+    font-size: 25px;
+    text-align: justify;
+    color: black;
+  
+}
