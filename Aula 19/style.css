@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 } 
+/* o Asteristico é universal Geralmente para fazer um reset de estilos, removendo margens e espaçamentos padrão que os navegadores aplicam. colocamos valor 0*/
 
 body{font-family: 'Times New Roman', Times, serif;
     background-color: #f1f1f1;
@@ -17,12 +18,16 @@ body{font-family: 'Times New Roman', Times, serif;
 .menu{
 display: flex;
 gap: 20px;
-}
+} /* GAP: cria espaço entre os elementos.Espaço entre eles.
+MARGIN: cria espaço ao redor de um elemento específico espaço de fora.*/
 
 .menu a:hover{
     color: #f1f1f1;
+    transform: scale(1.20);
     text-decoration: none;
-}
+} 
+/*HOVER é uma pseudoclasse do CSS usada para aplicar um estilo quando o mouse passa por cima de um elemento.*/
+
 .menu a{
     text-decoration: underline;
     transform: scale(1.20);
@@ -35,6 +40,8 @@ gap: 20px;
     gap: 25px;
     flex-wrap: wrap;
 }
+ /* "flex-wrap: wrap" Quebra para a próxima linha quando necessário quando fecha a janela para se adapta o tamanho da tela*/
+
 .produtos{
     background-color: #fff0f5;
     width: 250px;
@@ -67,3 +74,22 @@ gap: 20px;
 
 /* produto mais button ele cria um botão */
 /* O cursor: poiter = ele tranforma o cursor em uma mão*/
+.rodape{
+    background-color: #222;
+    color: #f1f1f1;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+}
+.rodape{
+    font-size: 15px;
+
+}
+.redes-sociais img{
+    width: 25px;
+}
+.redes-sociais{
+    display: flex;
+    gap: 15px;
+}
