@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> <!--DOM significa Document Object Model (Modelo de Objetos do Documento).
+                         É a forma como o JavaScript "enxerga" o HTML da página.-->
+
+</head>
+<body>
+    <h1>Estudos DOM</h1>
+    <p>Aprendendo a usar o DOM em javascript</p>
+    <p>Aqui que vai mudar</p>
+    <p class="msg">Vamos usar outros <b> seletor</b></p>
+
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" id="nome" name="nome"> <!--A tag <input> é usada para criar campos onde o usuário pode 
+                                                  digitar ou selecionar informações. Cria uma caixa de texto.-->
+
+    <button onclick="mostrarNome()">Mostrar</button>
+
+    <p id="resultado"></p>
+
+    <p id="texto">Vamos usar querySelector</p>
+
+    <script>
+        let paragrafo = document.getElementsByTagName(`p`)[1]
+
+        paragrafo.innerText = "Texto alterado pelo javaScript"
+        paragrafo.style.color = `blue`
+
+        // let p2 = document.getElementById("msg")
+        let p2 = document.getElementsByClassName("msg")[0]
+        p2.innerHTML = "Mudamos o texto uando o seletor <strong>CLASSE</strong>"
+
+      function mostrarNome() {
+    // let nome = document.getElementsByName("nome")[0].value
+    // (.value) pega o valor digitado no campo
+
+    const campo = document.querySelector("[name=nome]");
+    let nome = campo.value;
+
+    document.getElementById("resultado").innerText = `Olá, ${nome}`;
+}
+
+        let text = document.querySelector("p") //Sim! O # serve para indicar que você está procurando um elemento pelo id.
+
+        texto.innerText = "Usamos o querySelector pelo TAG" //O querySelector() é um método do JavaScript que serve para selecionar um elemento do HTML usando seletores CSS.
+
+
+     </script> <!-- A tag <script> é usada para inserir ou conectar código JavaScript em uma página HTML.      O JavaScript adiciona interatividade ao site, como cliques, validações de formulários, cálculos e animações, tem que ser usado dentro e no final do "body".-->
+
+    
+</body>
+</html>
